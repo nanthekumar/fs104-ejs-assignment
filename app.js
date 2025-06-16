@@ -1,5 +1,3 @@
-
-
 // app.js
 
 // 1. Load the Express module
@@ -8,8 +6,8 @@ const express = require('express');
 // 2. Create an Express app
 const app = express();
 
-// 3. Define the port number
-const PORT = 3000;
+// 3. Use dynamic port for deployment platforms like Render
+const PORT = process.env.PORT || 3000;
 
 // 4. Set EJS as the templating/view engine
 app.set('view engine', 'ejs');
@@ -43,7 +41,14 @@ app.get('/contact', (req, res) => {
   });
 });
 
-// 9. Start the server and listen on the specified port
+// 9. 404 route (optional but good for polish)
+app.use((req, res) => {
+  res.status(404).render('404', {
+    pageTitle: 'Page Not Found'
+  });
+});
+
+// 10. Start the serve
 app.listen(PORT, () => {
-  console.log(`🚀 Server is running at http://localhost:${PORT}`);
+  console.log(`🚀 Server is running on port ${PORT}`);
 });
