@@ -1,0 +1,89 @@
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General layout */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f2f5, #e0ecff);
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  
+  /* Main content */
+  main {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  hr {
+    margin: 30px 0;
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+  }
+
+  

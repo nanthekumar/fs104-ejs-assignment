@@ -1,0 +1,17 @@
+
+<%- include('partials/header') %>
+
+<h1>Hi, My name is <%= name %>!</h1>
+<p> Welocme to my homepage of my Express + EJS assignment.</p>
+
+<hr>
+
+<h2>My Hobbies</h2>
+<ul>
+  <% hobbies.forEach(hobby => { %>
+    <li><%= hobby %></li>
+  <% }) %>
+</ul>
+
+<%- include('partials/footer') %>
+
